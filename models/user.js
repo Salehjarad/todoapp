@@ -57,7 +57,7 @@ UserSchema.statics.findByToken = function(token) {
     var decoded;
 
     try {
-       decoded = jwt.verify(token, 'skom');
+       decoded = jwt.verify(token, 'key123');
     } catch(e) {
         return Promise.reject();
     }
